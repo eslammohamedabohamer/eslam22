@@ -569,3 +569,8 @@ ul {
 .features .container .box:hover a {
   color: white;
 }
+.random-photo,.random-photo1,.random-photo2{
+  width: 501px;
+  height: 560px;border-radius: 22px;
+  max-width: 100%;
+}

@@ -1,0 +1,39 @@
+.d-flex{
+    display: flex;
+
+}
+.p-20{
+    padding: 20px;
+}
+.m-20{
+    margin: 20px;
+}
+.bg-white{
+    background-color: white;
+}
+.p-relative{
+    position: relative;
+}
+.text-c{ 
+     text-align: center;
+}
+.m-t0{
+    margin-top:0;
+}
+.f-s14{
+    font: size 14%;
+
+}
+.c-black{
+    color:black;
+}
+.rad-6{
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.p-10{
+    padding: 10px;
+}
