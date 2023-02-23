@@ -61,5 +61,5 @@ const photoUrls = [
     
   }
   
-  setInterval(displayRandomPhoto, 400); // call displayRandomPhoto every 5 seconds (5000 milliseconds)
+  setInterval(displayRandomPhoto, 900); // call displayRandomPhoto every 1 seconds (900 milliseconds)
  
