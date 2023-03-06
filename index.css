@@ -607,14 +607,13 @@ margin: auto;
 }
 
 .features .container .box:hover .myphoto{
-transform: scale(1.5) rotateY(160deg) ;
-   transform: rotateY(160deg);
- 
+transform: scale(1.3)  rotateY(160deg) ;
+  
 }
 @media (max-width:776px) {
   .features .container .box:hover .myphoto{
-    transform: scale(1.2);
-   }  
+    transform: scale(1.2) rotateY(160deg) ;
+  }  
  
  
 }
