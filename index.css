@@ -601,14 +601,21 @@ ul {
 @media (max-width: 780px) {
 .myphoto {
   display: flex;
-width: 400px;
+width: 300px;
 margin: auto;
 }
 }
 
 .features .container .box:hover .myphoto{
 transform: scale(1.5) rotateY(160deg) ;
-   /* transform: rotateY(160deg); */
+   transform: rotateY(160deg);
+ 
+}
+@media (max-width:776px) {
+  .features .container .box:hover .myphoto{
+    transform: scale(1.2);
+   }  
+ 
  
 }
 .change-list-photo1.rotate-out{
