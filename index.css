@@ -721,7 +721,38 @@ transform: scale(1.3)  rotateY(160deg) ;
 
   
 } 
+/*welcome  paragraph */
+#paragraph {
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-align: justify;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
+#paragraph span {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
 
+#paragraph span.show {
+  opacity: 1;
+  color: #0064b4;
+ 
+}
+#paragraph span:nth-child(25){
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 33px;
+}
+#paragraph span:nth-child(26){
+  color: rgb(238, 131, 8);
+  font-size: 33px;
+  font-weight: bold;
+
+}
+ 
+/*welcome  paragraph */
 
 

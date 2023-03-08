@@ -109,3 +109,30 @@ currentPhotoIndex2 = (currentPhotoIndex2 + 1) % imageUrls.length;
 }
 updatePhoto2();
 setInterval(updatePhoto2, 1600); 
+// ! ???????????????????
+const welcomeMessage = document.getElementById('paragraph');
+const name = prompt('Please enter your name:');
+if (name) {
+   welcomeMessage.textContent = `Welcome to our website, ${name}! We hope you enjoy your visit.`;
+    } else {
+    welcomeMessage.textContent = 'Welcome to our website! We hope you enjoy your visit.';
+  }
+const paragraph = document.getElementById('paragraph');
+ let text = paragraph.innerText;
+
+// Clear the original text content
+paragraph.innerText = '';
+
+// Loop through each character and append it to the paragraph
+for (let i = 0; i < text.length; i++) {
+   const span = document.createElement('span');
+   span.innerText = text.charAt(i);
+   span.style.animationDelay = `${i * 0.1}s`;
+   paragraph.appendChild(span);
+
+   // Add a class to show the letter gradually with a smooth effect
+   setTimeout(() => {
+      span.classList.add('show');
+   }, i * 100);
+}
+ 
