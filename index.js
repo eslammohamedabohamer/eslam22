@@ -48,7 +48,7 @@ const imageUrls = [
  
 // Get a reference to the HTML img element
 const changeListPhoto = document.querySelector('.change-list-photo');
-
+ 
 // Initialize the index of the current photo
 let currentPhotoIndex = 0;
 
@@ -110,3 +110,45 @@ currentPhotoIndex2 = (currentPhotoIndex2 + 1) % imageUrls.length;
 updatePhoto2();
 setInterval(updatePhoto2, 1600); 
 // ! ??????????????????? 
+//! button scrool
+let top_scrool = document.querySelector("#top_scrool");
+window.onscroll =function(){
+  if (window.scrollY >= 1000)
+  {
+    console.log("toooo");
+    top_scrool.style.display="block";
+}
+else
+top_scrool.style.display= "none";
+} 
+top_scrool.onclick =()=> window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+//! button scrool
+
+
+
+let landing = document.querySelectorAll(".landing::before")
+console.log(landing);
+let backgrounds = [
+  "https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/2156881/pexels-photo-2156881.jpeg?auto=compress&cs=tinysrgb&w=600https://images.pexels.com/photos/355805/pexels-photo-355805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/355805/pexels-photo-355805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  "https://images.pexels.com/photos/141361/pexels-photo-141361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  " https://images.pexels.com/photos/314946/pexels-photo-314946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+]
+ 
+
+
+
+
+
+
+
+
+// setInterval(function () {
+//  backgrounds[Math.floor(Math.random()*backgrounds.length)] 
+// }    , 1000)
+
+
+
+// let eslam = ["eslam"," mohamed" ,"ahmed"]
+// console.log(eslam[Math.floor(Math.random()*eslam.length)]);
